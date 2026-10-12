@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "testCases": 12,
+  "method": "Mock GitHub API publication ordering, second asset failure, demo/corruption/repository/immutable guards, checkpoint recovery, authorization failure and credential stripping on redirects",
+  "actualGitHubDeployment": false
+}

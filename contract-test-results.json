@@ -1,0 +1,7 @@
+{
+  "method": "Same Java model core trained on CPU with historical public-data fixtures; RSA verification, altered payloads, stale/future models, schema/dimension/range checks and model parity",
+  "passed": true,
+  "assertions": 40,
+  "actualCloudDeployment": false,
+  "androidRuntimeVerified": false
+}

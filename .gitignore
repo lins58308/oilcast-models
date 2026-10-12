@@ -1,0 +1,9 @@
+private/
+*.pem
+*.key
+.env
+build/
+output/
+checkpoint.json
+__pycache__/
+*.log

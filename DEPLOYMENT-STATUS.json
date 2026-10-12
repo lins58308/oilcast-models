@@ -1,0 +1,11 @@
+{
+  "repository": "lins58308/oilcast-models",
+  "plannedVisibility": "public",
+  "created": true,
+  "deployed": false,
+  "secretInstalled": false,
+  "liveCpcFetchVerified": false,
+  "signedModelPublicDownloadVerified": false,
+  "appConfigReady": false,
+  "browserFallbackPermissionPending": false
+}
