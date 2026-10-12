@@ -8,7 +8,7 @@ import java.security.*;
 import java.security.interfaces.RSAKey;
 import java.security.spec.*;
 
-/** Shared Java/Android contract. This prototype does not install a model into the App. */
+/** Signed parameter-only model contract shared by the CPU trainer and Android reader. */
 public final class CloudModelPackage {
     public static final int MAX_BYTES=8*1024*1024;
     private static void require(boolean value,String message){if(!value)throw new IllegalArgumentException(message);}

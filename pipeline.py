@@ -128,7 +128,9 @@ def main():
         if process.returncode!=0:raise RuntimeError('Training failed; previous public model stays available')
         cp=str(ROOT/'build/classes')+os.pathsep+str(ROOT/'build/json.jar')
         subprocess.run(['java','-cp',cp,'VerifyOutput',str(ROOT),str(out)],check=True)
-        report('publish',96);publish(api,tag,out);report('complete',100,'complete')
+        report('publish',96);publish(api,tag,out)
+        subprocess.run(['java','-cp',cp,'VerifyPublicDownload',str(ROOT),repo,str(out)],check=True)
+        report('complete',100,'complete')
         print('Signed cloud model published:',tag)
     except Exception:
         if process and process.poll() is None:process.terminate()

@@ -5,7 +5,7 @@ import java.nio.charset.StandardCharsets;
 import java.time.*;
 import java.util.*;
 
-/** CPU trainer using the same six source classes as Oilcast Android 3.3.4. */
+/** CPU trainer using the same model source classes as Oilcast Android 3.3.5. */
 public final class CloudTrainer {
     public static void main(String[] args)throws Exception{
         Path root=Path.of(args[0]),out=Path.of(args[1]);boolean live=Boolean.parseBoolean(args[2]);
