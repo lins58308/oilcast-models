@@ -1,0 +1,20 @@
+name: Seed public OilCast model mirror
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: oilcast-staging-mirror-seed
+  cancel-in-progress: false
+jobs:
+  mirror:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Copy existing public signed releases and verify bytes
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 mirror_releases.py
